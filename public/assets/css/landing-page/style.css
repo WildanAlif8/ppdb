@@ -1,0 +1,172 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+	
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: #fff;
+}
+
+
+.containers{
+	background-color: rgba(0, 0, 0, 0.433);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contents{
+	margin-right: 100vh;
+}
+
+
+nav{
+	background: #fff;
+	border-radius: 50px;
+	box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	margin: 20px 0 0 20vh;
+}
+
+nav ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 15px 20px;
+	margin: 10px;
+	font-size: 15px;
+	font-weight: 500;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+	transition: color 0.5s; 
+}
+
+nav ul li a{
+    text-decoration: none;
+	color: #3a3a3a;
+
+}
+
+nav ul .logo{
+	padding-right: 45vh;
+}
+
+nav ul li::after{
+	content: '';
+	background: #ffe433;
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	opacity: 0;
+	transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li:hover{
+	color: #fff;
+}
+
+nav ul li:hover::after{
+	top: 50%;
+	opacity: 1;
+}
+
+.text h1{
+	padding-bottom: 20px;
+	margin: 20vh 0 30px 21vh;
+	padding: 0;
+}
+.text .isi{
+	padding-bottom: 10vh;
+	margin-left: 21vh;
+}
+
+.button {
+	position: relative;
+	background-color: #000284;
+	border: none;
+	font-size: 16px;
+	color: #3a3a3a;
+	padding: 20px;
+	width: 33vh;
+	text-align: center;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+    border-radius: 4px;
+	margin-left: 21vh;
+  }
+  
+  .button:after {
+	content: "";
+	background: #fff;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px!important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+  }
+
+  .button:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+  }
+
+#section1{
+	height: 100vh;
+	display: inline-block;
+	width: 100%;
+    padding-top: 30px;
+}
+  #section2{
+	height: 700px;
+	background: #fff;
+	display: inline-block;
+	width: 100%;
+}
+#section3{
+	height: 700px;
+	background: red;
+	display: inline-block;
+	width: 100%;
+}
+#section4{
+	height: 700px;
+	background: blue;
+	display: inline-block;
+	width: 100%;
+}
+#section5{
+	height: 700px;
+	background: pink;
+	display: inline-block;
+	width: 100%;
+}
